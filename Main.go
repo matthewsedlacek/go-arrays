@@ -3,8 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	// Make function
-	a := make([]int, 3, 100)
+	a := []int{}
+	fmt.Println(a)
+	fmt.Printf("Length: %v\n", len(a))
+	fmt.Printf("Capacity: %v\n", cap(a))
+
+	// Adding an element to a slice
+	a = append(a, 1)
 	fmt.Println(a)
 	fmt.Printf("Length: %v\n", len(a))
 	fmt.Printf("Capacity: %v\n", cap(a))
